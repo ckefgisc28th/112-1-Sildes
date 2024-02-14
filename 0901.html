@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Short URL App</title>
-    <script type="text/javascript">
-        // 使用 IIFE 模式立即調用裡面的 JavaScript 程式碼
-        (function () {
-            var fragments = location.pathname.split('/');
-            var course = fragments[fragments.length-2];
-            fetch(`${course}.json`)
-                .then(response => response.json())
-                .then(slides =>{
-                    var name = fragments[fragments.length-1];
-                    var url = slides[name];
-                    location.href = url ? url : './index.html';
-                });
-        })();
-    </script>
-</head>
+<html>
+    <head>
+        <meta http-equiv="refresh" content="0;url=https://www.canva.com/design/DAFhIKU0HwE/mCqeNN1UmrNUBMlH_01qqw/edit?utm_content=DAFhIKU0HwE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" />
+    </head>
 </html>
