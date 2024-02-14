@@ -1,6 +1,6 @@
 import os
 
-now = "Main"
+now = "Algo"
 
 f = open(f"./{now}/{now}.txt",mode="r")
 urls = f.readlines()
