@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Short URL App</title>
-    <script type="text/javascript">
-        (function () {
-            var fragments = location.pathname.split('/');
-            var course = fragments[fragments.length-2];
-            fetch(`${course}.json`)
-                .then(response => response.json())
-                .then(slides =>{
-                    var name = fragments[fragments.length-1];
-                    var url = slides[name];
-                    location.href = url ? url : './index.html';
-                });
-        })();
-    </script>
+        <meta http-equiv="refresh" content="0;url=https://spotted-oboe-ece.notion.site/3440490c443446c1acf5837b5ffe0d9c" />
 </head>
 <body>hello1</body>
 </html>
